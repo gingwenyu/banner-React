@@ -1,0 +1,63 @@
+.wrap {
+  position: relative;
+  display: block;
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img {
+  width: 1200px;
+  height: 380px;
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.closed {
+  overflow: hidden;
+  height: 80px;
+}
+
+.closed > img {
+  position: absolute;
+  top: -300px;
+  left: auto;
+  right: auto;
+}
+
+.opening {
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  height: 300px;
+}
+
+.opened {
+  overflow: hidden;
+  height: 300px;
+}
+
+.closing {
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  height: 80px;
+}
+
+.closing > img {
+  position: absolute;
+  top: -300px;
+  left: auto;
+  right: auto;
+}
+/*# sourceMappingURL=all.css.map */
